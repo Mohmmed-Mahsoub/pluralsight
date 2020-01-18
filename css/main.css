@@ -1,0 +1,176 @@
+/* global */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #181818;
+}
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    width:300px;
+    margin:auto
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+
+/*left side*/
+.sign-in {
+    display: flex;
+    color: #fff;
+}
+.sign-in .form {
+    flex: 1;
+    height: 100vh;
+}
+
+.sign-in .container .logo img {
+    height: 50px;
+    margin: 3rem 0;
+}
+
+.sign-in .form form label {
+    display: block;
+    color: #c5c5c5;
+    margin-bottom: 0.4rem;
+
+}
+.sign-in .form form input {
+    width:100%;
+    background: none;
+    border: 1px solid #505050;
+    padding: 0.4rem 0.6rem;
+    outline: 0;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+.sign-in .form form button {
+    width: 100%;
+    border: 0;
+    background-color: #f96816;
+    outline: 0;
+    color: #fff;
+    padding: 0.7rem 0;
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+}
+.sign-in .form form button:hover {
+    cursor: pointer;
+    background-color: #fd833d;
+}
+.sign-in .form form .links a {
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+}
+.sign-in .form form .links a:hover {
+    color:#fd833d;
+    text-decoration: underline;
+}
+.sign-in .form form .or {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.sign-in .form form .or hr {
+    width: 100%;
+}
+.sign-in .form form .or span {
+    margin: 0 1rem;
+    text-transform: uppercase;
+}
+
+footer {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+footer > div {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+}
+footer .footer-links a {
+    padding:0 1rem;
+    text-decoration: underline;
+    color: #ccc;
+}
+footer .footer-links a:hover {
+    color: #fd833d;
+}
+
+
+/*right side*/
+.sign-in .image {
+    flex: 1;
+    background-image: url("../images/sign-in.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.sign-in .image h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    padding: 0 1rem;
+}
+.sign-in .image a {
+    width: 200px;
+}
+
+
+/*my Framwork*/
+.btn {
+    border: 1px solid #fff;
+    padding: 0.5rem 0;
+    width: 80%;
+    margin: 1.5rem auto;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+    border: 1px solid #f96816;
+    color: #f96816;
+}
+
+/*Media Query*/
+@media(min-width:1200px) {
+    .sign-in .form {
+        flex: 1;
+    }
+    .sign-in .image {
+        flex: 2;
+    }
+}
+
+@media(max-width:768px) {
+    .sign-in .form {
+        flex: 1;
+    }
+    .sign-in .image {
+        display: none;
+    }
+    .container {
+        width:80%;
+    }
+    .sign-in .container .logo {
+        display: flex;
+        justify-content: center;
+    }
+    .sign-in .container .logo img {
+        height: 60px;
+        margin: 2rem 0;
+    }
+}
